@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ejjj</title>
     <link rel="stylesheet" href="style5.css">
 </head>
-
 <body>
-    <audio id="bg-music" autoplay loop>
+
+    <audio id="bg-music" autoplay loop preload="auto">
         <source src="music.mp3" type="audio/mpeg">
     </audio>
 
@@ -19,6 +18,14 @@
         if (!localStorage.getItem('musicAllowed')) {
             music.pause();
         }
+
+        music.volume = 0;
+        let v = 0;
+        const fade = setInterval(() => {
+            v += 0.05;
+            music.volume = Math.min(v, 0.5);
+            if (v >= 0.5) clearInterval(fade);
+        }, 100);
     </script>
 
     <section class="hearts-container">
@@ -28,14 +35,12 @@
         <section class="zdj">
             <img src="yey.gif" alt="">
             <img src="yey.gif" alt=""><br>
-            <h1>Godzinka do dogadania!!<br><br>
-                okioki?
-            </h1>
+            <h1>Godzinka do dogadania!!<br><br>okioki?</h1>
             <img src="yey.gif" alt="">
             <img src="yey.gif" alt="">
         </section>
     </section>
+
     <script src="script.js"></script>
 </body>
-
 </html>
