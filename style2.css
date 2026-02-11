@@ -1,0 +1,65 @@
+body {
+    background-color: bisque;
+}
+.pytanie1 {
+    height: 80%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: azure;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+    font-size: 150%;
+}
+
+.delta img {
+    height: 30%;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: azure;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px;
+}
+.odp a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 220%;
+}
+.odp {
+    height: 50%;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 100%;
+    text-align: center;
+}
+.a {
+    background-color: dodgerblue;
+    border-radius: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.b {
+    background-color: rgb(19, 189, 19);
+    border-radius: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.c {
+    background-color: crimson;
+    border-radius: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
