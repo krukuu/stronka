@@ -9,6 +9,18 @@
 </head>
 
 <body>
+    <audio id="bg-music" autoplay loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        const music = document.getElementById('bg-music');
+
+        if (!localStorage.getItem('musicAllowed')) {
+            music.pause();
+        }
+    </script>
+
     <section class="hearts-container">
         <section class="title">
             <h1>Czyli randeczka 14!!!</h1>
@@ -17,7 +29,7 @@
             <img src="yey.gif" alt="">
             <img src="yey.gif" alt=""><br>
             <h1>Godzinka do dogadania!!<br><br>
-                okioki?    
+                okioki?
             </h1>
             <img src="yey.gif" alt="">
             <img src="yey.gif" alt="">
