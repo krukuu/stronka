@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style4.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
     <section class="title">
         <h1>HEEEEEEEEEEEj</h1>
@@ -15,9 +17,26 @@
         <h1>zostaniesz mojom</h1>
         <img src="bag.gif" alt=""><br>
         <h1>WALENTYNKĄ</h1>
-        <a class="tak" href="hej.html">tak</a>
+        <a class="tak" href="hej.html" id="yes">tak</a>
         <a class="ne" href="">ne.</a>
 
     </section>
+
+    <script>
+        const yesLink = document.getElementById('yes');
+        const audio = new Audio('music.mp3');
+        audio.loop = true;
+        audio.volume = 0.5;
+
+        yesLink.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            audio.play().then(() => {
+                localStorage.setItem('musicAllowed', '1');
+                window.location.href = yesLink.href;
+            });
+        });
+    </script>
 </body>
+
 </html>
